@@ -6,6 +6,8 @@ import { AppContainer } from './components/app-container';
 
 const $root =  document.getElementById('root') as HTMLElement;
 
+$root.className = 'bg-light dark:bg-dark'
+
 ReactDOM.createRoot($root).render(
   <React.StrictMode>
     <AppContainer />
