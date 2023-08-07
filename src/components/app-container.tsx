@@ -4,6 +4,8 @@ import Logo from '../logo.svg'
 import { BaseText } from './base-text';
 import { useStore } from '../stores';
 import { useEffect } from 'react'
+import { TaskList } from './task-list';
+import { TaskInput } from './task-input';
 
 export const AppContainer = observer(() => {
     const store = useStore()
@@ -18,12 +20,13 @@ export const AppContainer = observer(() => {
                 <div className="flex items-center">
                     <img src={Logo} alt='logo'></img>
                     <div className="text-xl text-primary">
-                        TodoList 
+                        <a href='https://github.com/ardwiinoo' target='blank'>TodoList </a>
                     </div>
                 </div>
                 <ThemeToggle></ThemeToggle>
             </div>
-            <BaseText>Hello banggg</BaseText>
+            <TaskInput></TaskInput>
+            <TaskList></TaskList>
         </div>
     )
 })
