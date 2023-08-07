@@ -9,8 +9,8 @@ module.exports = {
         'dark': '#1c1917',
         'component': '#fff',
         'component-dark': '#3f3f46',
-        'primary': '',
-        'danger': '' 
+        'primary': '#74DEFB',
+        'danger': '#EF4444' 
       }
     },
   },
